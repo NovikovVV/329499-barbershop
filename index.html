@@ -5,8 +5,182 @@
     <title>HTML Academy: Барбершоп</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+	  <header class="main-header">
+		  <div class="container">
+			  <nav class="main-nav">
+				  <ul class="main-menu">
+					  <li class="main-menu__item">
+						  <a class="main-menu__link" href="#">Информация</a>
+						</li>
+						<li class="main-menu__item">
+						  <a class="main-menu__link" href="#">Новости</a>
+						</li>
+						<li class="main-menu__item">
+						  <a class="main-menu__link" href="#">Прайс-лист</a>
+						</li>
+						<li class="main-menu__item">
+						  <a class="main-menu__link" href="#">Магазин</a>
+						</li>
+						<li class="main-menu__item">
+						  <a class="main-menu__link" href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="user-block">
+					  <a class="user-block__login" href="#">Вход</a>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+		  <div class="container">
+			  <div class="main-logo">
+				  <img src="#" width="100" height="100" alt="Barbershop Borodinski">
+				</div>
+				<section class="features">
+				  <h2 class="visuallyhidden">Преимущества</h2>
+				  <div class="feature  features__item">
+					  <h2 class="feature__title">
+						  Быстро
+						</h2>
+						<p class="feature__description">
+						  Мы делаем свою работу быстро! Два часа
+							пролетят незаметно и вы — счастливый
+							обладатель стильной стрижки-минутки!
+						</p>
+					</div>
+					<div class="feature  features__item">
+					  <h2 class="feature__title">
+						  Круто
+						</h2>
+						<p class="feature__description">
+						  Забудьте, как вы стриглись раньше.
+							Мы сделаем из вас звезду футбола или кино!
+							Во всяком случае внешне.
+						</p>
+					</div>
+					<div class="feature  features__item">
+					  <h2 class="feature__title">
+						  Дорого
+						</h2>
+						<p class="feature__description">
+						  Наши мастера — профессионалы своего дела и
+							не могут стоить дешево. К тому же, разве цена
+							не дает определенный статус?
+						</p>
+					</div>
+				</section>
+				<div class="main-content-wrap">
+				  <section class="news">
+					  <h2 class="section-title">
+						  Новости
+						</h2>
+						<ul class="news__list">
+						  <li class="news__item">
+							  <p class="news__text">
+								  Нам наконец завезли ягермайстер! Теперь вы можете
+								  пропустить стаканчик во время стрижки.
+								</p>
+								<time datetime="2017-01-11">11 января</time>
+							</li>
+							<li class="news__item">
+							  <p class="news__text">
+								  В нашей команде пополнение, Борис "Бритва" Стригунец,
+								  обладатель множества титулов и наград пополнил наши
+								  стройные ряды.
+								</p>
+								<time datetime="2017-01-18">18 января</time>
+							</li>
+						</ul>
+						<a class="btn  all-news" href="#">Все новости</a>
+					</section>
+					<section class="photo-gallery">
+					  <h2 class="section-title">
+						  Фотогалерея
+						</h2>
+						<figure class="photo-gallery__content">
+						  <img src="#" width="100" height="100" alt="Barbershop Borodinski Interior">
+						</figure>
+						<button class="btn  prev" type="button">Назад</button>
+						<button class="btn  next" type="button">Вперед</button>
+					</section>
+				</div>
+				<div class="main-content-wrap">
+				  <section class="contacts">
+					  <h2 class="section-title">
+						  Контактная информация
+						</h2>
+						<p class="address">
+						  <span>Барбершоп "Бородинский"</span>
+						  <span>Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8</span>
+						  <span>Телефон:<a class="tel" href="tel:7(495)666-02-66">+7 (495) 666-02-66</a></span>
+						</p>
+						<p class="working-hours">
+						  <span>Время работы:</span>
+						  <span>пн — пт: с 10:00 до 22:00</span>
+						  <span>сб — вс: с 10:00 до 19:00</span>
+						</p>
+						<a class="btn  roadmap" href="#">Как проехать</a>
+						<a class="btn  feedback" href="#">Обратная связь</a>
+					</section>
+					<section class="appointment">
+					  <h2 class="section-title">
+						  Записаться
+						</h2>
+						<form class="appointment__form">
+						  <fieldset>
+							  <legend>
+								  Укажите желаемую дату и время и мы свяжемся
+								  с вами для подтверждения брони
+								</legend>
+								<label class="form-label">
+								  <span>Дата</span><input type="text" name="date" id="date" placeholder="08.10.2017">
+								</label>
+								<label class="form-label">
+								  <span>Время</span><input type="text" name="time" id="time" placeholder="10:00">
+								</label>
+								<label class="form-label">
+								  <span>Ваше имя</span><input type="text" name="userName" id="userName" placeholder="Борода">
+								</label>
+								<label class="form-label">
+								  <span>Телефон</span><input type="tel" name="tel" id="tel" placeholder="+7 123 456-78-90">
+								</label>
+								<button class="btn" type="submit" name="submitBtn">Отправить</button>
+							</fieldset>
+						</form>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="main-footer">
+		  <div class="container">
+			  <section class="footer-contacts">
+				  <h2 class="visuallyhidden">
+					  Контактная информация
+					</h2>
+				  <p class="address">
+					  <span>Барбершоп "Бородинский"</span>
+					  <span>Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8</span>
+						<span><a class="find-us" href="#">Как нас найти?</a></span>
+					  <span>Телефон:<a class="tel" href="tel:7(495)666-02-66">+7 (495) 666-02-66</a></span>
+				  </p>
+				</section>
+				<section class="social">
+				  <h2 class="visuallyhidden">
+					  Социальные сети
+					</h2>
+					<span>Давайте дружить!</span>
+					<a class="social-btn  vk" href="#">Вконтакте</a>
+					<a class="social-btn  fb" href="#">Фейсбук</a>
+					<a class="social-btn  inst" href="#">Инстаграм</a>
+				</section>
+				<section class="copyrights">
+				  <h2 class="visuallyhidden">
+					  Авторские права
+					</h2>
+					<span>Разработано:</span>
+					<a class="btn" href="#">Html Academy</a>
+				</section>
+			</div>
+		</footer>
   </body>
 </html>
